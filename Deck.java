@@ -52,5 +52,14 @@ class Deck {
             }
         }
     }
+     // Searches for a specific card in the deck
+    public boolean findCard(String rank, String suit) {
+        for (Card card : deck) {
+            if (card.getRank().equalsIgnoreCase(rank) && card.getSuit().equalsIgnoreCase(suit)) {
+                return true;
+            }
+        }
+        return false;
+    }
     
     
